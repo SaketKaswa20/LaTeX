@@ -1,0 +1,222 @@
+\documentclass[font size]{type of document}
+Ex: \documentclass[11pt,a4paper]{article}
+
+\begin{document} : Before beginning any LaTeX document
+\end{document}: To end any LaTeX document
+
+Write all the content between begin and end document tags.
+
+% : To comment out something
+
+\parindent 0px : It will not ident the paragraphs in the document
+
+\pagestyle{empty}: To remove the page number
+
+\LaTeX\ : To get the word LaTeX in special font
+
+$Math expression$ : To write any mathematical expression
+
+${Math Expression}$ : To bring the whole mathematical expression on one line
+
+$$Math Expression$$ : To write mathematical expression and print on other line separately
+
+\ldots: Brings '...' in the document
+
+Greek Letters:
+
+$$\pi$$ : prints lowercase π
+
+$$\Pi$$ : print uppercase Π
+
+$$\<GreekLetterName>$$: prints the greek letter
+
+$$A= \pi r^2$$: prints A = πr2
+
+Trigonometric functions:
+
+$$y= \sin x$$: Prints y=sinx
+
+$$y= \sin^{-1} x$$: Prints sin invers x
+
+Logarithmic Functions:
+
+$$y= \log x$$ : Prints y=logx
+
+Root Function:
+
+$$\sqrt(number)$$ : This will give square root of the number
+
+$$ \sqrt[n]{x} $$ : This will print nth root of x
+
+Fractions:
+
+$$ \frac{numerator}{denominator}$$
+
+Brackets:
+
+\usepackage{amsfonts,amssymb, amsmath} : To get some special symbols, fonts [Use this just after \documentclass tag]
+
+\in : To get the 'belongs to' symbols ∈
+
+\mathbb{R} : To get the 'Real Number' Symbol. 
+
+\\[6pt] : It will create a linked break of width 6 pt. You can change the number.
+
+$\{content\}$ :  It will not ignore the curly bracket then
+
+$\$$: It will print the dollar symbol
+
+$$\left({\frac{n}{d}\right)$$ : This will make the size of () according to the size of equation
+
+Sample Code for different types of bracket:
+$$\left(\frac{1}{\sqrt{x^2+y^2}}\right)$$
+$$\left[\frac{1}{\sqrt{x^2+y^2}}\right]$$
+$$\left\{\frac{1}{\sqrt{x^2+y^2}}\right\}$$
+$$\left \langle   \frac{1}{\sqrt{x^2+y^2}}  \right \rangle$$
+$$\left | \frac{1}{\sqrt{x^2+y^2}}\right |$$
+$$\left. \frac{dy}{dx} \right |_{x=1}$$ 
+
+Tables:
+
+\begin{tabular}{cccccc}
+--data with & sign in between--
+\end{tabular} : It will create 6 columns in which data will be centred alinged
+
+\begin{tabular}{llllll}
+--data with & sign in between--
+\end{tabular} : It will create 6 columns in which data will be left alinged
+
+\begin{tabular}{rrrrrr}
+--data with & sign in between--
+\end{tabular} : It will create 6 columns in which data will be right alinged
+
+\begin{tabular}{ccrrll}
+--data with & sign in between--
+\end{tabular} : It will create 2 columns in which data will be centred alinged, 2 columns right aligned and 2 columns left aligned.
+
+\begin{tabular}{|c|c|c|c|c|c|}
+first row data with & sign in between\\ \hline [to bring horizontal line]
+second row data with & sign in between\\
+third row data with & sign in between\\
+\end{tabular} : It will create 6 columns with vertical bars in between in which data will be centred alinged
+
+\begin{tabular}{|c|p{2cm}|}
+--data with & sign in between--
+\end{tabular} : It will create 2 columns in which data will be one will be centred alinged, and one will be a paragrapgh.
+
+Sample Code:
+
+\begin{table}[H]
+\centering
+\def\arraystretch{1.5}
+\begin{tabular}{|c||c|c|c|c|c|} \hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & 10 & 20 & 30 & 40 & 50\\ \hline
+\end{tabular}
+\caption{These values represent}
+\end{table}
+
+Arrays:
+/begin{align}
+Your text
+/end{align}
+
+Lists:
+
+\begin(enumerate)
+\item itemname
+\item itemname
+\end(enumerate) : This will create a numbered list
+
+\begin(itemize)
+\item itemname
+\item itemname
+\end(itemize) : This will create a bulleted list
+
+\begin(itemize)
+\item itemname
+\item itemname
+	\begin(itemize)
+	\item itemname
+	\item itemname
+	\end(itemize)
+\end(itemize) : This will create a nested list
+
+
+Text Document Formatting:
+
+\textit{your text} : This will write the text btwn brackets in Italics
+
+\textbf{your tex} : This will write the text btwn the brackets in Bold.
+
+\textsc{your text} : This will write the text in small caps.
+
+\texttt{your text} : This will write the text in typewriter font.
+
+\usepackage{hyperef} : This will make the link clickable in the document
+
+\url{your link} : This will make the link clickable and will be written in typewriter format
+
+\href{your link}{Text} : When we click on the text it will redirect to the link
+
+\begin{large}Your Text\end{large} : The written in between will be written in large
+
+
+Sample Code:
+\vspace{1cm}
+\begin{large}Your Text\end{large}\\
+\vspace{1cm}
+\begin{Large}Your Text\end{Large}\\
+\vspace{1cm}
+\begin{huge}Your Text\end{huge}\\
+\vspace{1cm}
+\begin{Huge}Your Text\end{Huge}\\
+
+\begin{center}
+Your Text
+\end{center} : Text written in between will be centred
+
+\begin{flushleft}
+Your Text
+\end{flushleft} : Text written in between will be left
+
+\begin{flushright}
+Your Text
+\end{flushright} : Text written in between will be right
+
+\title{text}
+\author{text}
+\date{date} : Write all these before \begin{document} 
+Then to print all of this site \maketitle 
+
+ 
+\date{\today} : It will take the date on which it was last compiled.
+
+Sections:
+
+\section{Section Name} : it will create a section
+
+\subsection{SubSection name} : after the section tag go on next line give a intend and then use to create subsections
+
+\subsubsection{name} : It will create subsubsection
+
+\section*{section Name} : It will create a section without any numbering 
+
+\tableofcontents : It will create a new page and add all sections heading under it
+
+Packages:
+
+\usepackage{fullpage} : It will create a 1inch margin on all sides
+
+\usepackage[top= 1in, bottom= 1in, left=0.5in , right=0.5in]{geometry}: Fully customizable margin
+
+\includegraphics[height= ]{image name} : Image must be in same folder as your .tex file
+Macros:
+
+\def\eq1{your eqn} : So whenever you type $eq1$ it will print the feeder eqn.
+
+Calculus Notation:
+
+$\displaystyle{\lim\limits_{x \to a}$ : To show limit
+
+$\int_a^b$ : It will show integration symbol with limits a to b
